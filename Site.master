@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <title>GSA Vendor and Customer Self Service</title>
+    <link rel="GSA Shortcut icon" href="Images/GSAicon.ico" />
+    <link href="<%# ResolveUrl("~/Styles/Site.css") %>" rel="stylesheet" type="text/css" />
+    <style id="InlinePageStyles" runat="server" type="text/css"></style>
+    <script src="<%# ResolveUrl("~/Scripts/jquery-1.4.1.js") %>" type="text/javascript"></script>
+    <script language="javascript" id="_fed_an_ua_tag" src="<%# ResolveUrl("~/Scripts/Universal-Federated-Analytics.js") + "?agency=GSA&subagency=OCFO" %>"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <gsa:ModalWarning runat="server" ID="mdlWarning" />
+    <telerik:RadFormDecorator runat="server" ID="radDecorator" DecoratedControls="RadioButtons, Textbox, Textarea, Label, Select, ValidationSummary" />
+    <telerik:RadFormDecorator runat="server" ID="RadFormDecorator1" DecoratedControls="Buttons"
+        Skin="Vista" />
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" />
+    <div class="page">
+        <div class="VCSSHeader">
+            <asp:Menu ID="Menu1" runat="server" CssClass="VCSSHeader" EnableViewState="false"
+                IncludeStyleBlock="false" Orientation="Horizontal" DataSourceID="sdsMenuDatasource" />
+        </div>
+        <div class="header">
+            <div class="logo">
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/Logo.gif" border="0" />
+            </div>
+        </div>
+        <div class="hideSkiplink">
+            <asp:SiteMapDataSource ID="sdsMenuDatasource" runat="server" ShowStartingNode="false" />
+            <telerik:RadMenu ID="RadMenu1" runat="server" DataSourceID="sdsMenuDatasource" Skin="WebBlue"
+                Width="100%" Style="z-index: 2900" />
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </div>
+    <ajaxToolkit:ModalPopupExtender ID="mdlPopup" runat="server" TargetControlID="pnlPopup"
+        PopupControlID="pnlPopup" BackgroundCssClass="loadingPanelMask" />
+    <asp:Panel ID="pnlPopup" runat="server" CssClass="loadingPanel" Style="display: none">
+        <asp:Image ID="imgProgress" runat="server" ImageUrl="~/Images/Progress.gif" border="0" />
+    </asp:Panel>
+    </form>
+</body>
+</html>
