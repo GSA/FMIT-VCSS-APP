@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="html"/>
+  <xsl:template match="content">
+    <h2>Phase 1 VCSS Training</h2>
+  <div id="content"><script type="text/javascript" src="http://player.ooyala.com/player.js?width=540&amp;height=480&amp;embedCode=YxeGJxMjoWfkE9GZaqbdji1YeBJ-B8Ky&amp;browserPlacement=right225px&amp;wmode=opaque"></script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="ooyalaPlayer_8mwbp_gr84sf5v" width="540" height="480" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab"><param name="movie" value="http://player.ooyala.com/player.swf?embedCode=YxeGJxMjoWfkE9GZaqbdji1YeBJ-B8Ky&amp;version=2" /><param name="bgcolor" value="#000000" /><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="true" /><param name="flashvars" value="embedType=noscriptObjectTag&amp;embedCode=YxeGJxMjoWfkE9GZaqbdji1YeBJ-B8Ky&amp;browserPlacement=right225px" /><embed src="http://player.ooyala.com/player.swf?embedCode=YxeGJxMjoWfkE9GZaqbdji1YeBJ-B8Ky&amp;version=2" bgcolor="#000000" width="540" height="480" name="ooyalaPlayer_8mwbp_gr84sf5v" align="middle" play="true" loop="false" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" flashvars="&amp;embedCode=YxeGJxMjoWfkE9GZaqbdji1YeBJ-B8Ky&amp;browserPlacement=right225px" pluginspage="http://www.adobe.com/go/getflashplayer"></embed></object></noscript></div>
+  </xsl:template>
+</xsl:stylesheet>
