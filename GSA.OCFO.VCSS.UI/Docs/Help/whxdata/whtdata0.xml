@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<tocdata>
+<book name="Table Of Contents" >
+  <item name="Overview" url="Introduction.htm" />
+  <item name="Frequently Asked Questions" url="FAQS/Frequently_Asked_Questions.htm" />
+  <item name="Downloading Detailed Transactions" url="Menu_Statements/View_Details.htm" />
+  <book name="Accounts Menu" >
+    <item name="Account Information" url="Menu_Accounts/Account_Information.htm" />
+    <item name="Account Summary" url="Menu_Accounts/Account_Summary.htm" />
+    <item name="Outstanding Balances by Account" url="Menu_Accounts/Outstanding_Balances_by_Account.htm" />
+    <item name="Business Line Summary" url="Menu_Accounts/Business_Line_Summary.htm" />
+  </book>
+  <book name="Statements Menu" >
+    <item name="View and Print Statements" url="Menu_Statements/View_and_Print_Statements.htm" />
+    <item name="View and Download Details" url="Menu_Statements/View_Details.htm" />
+    <item name="Dispute Statement or Details" url="Menu_Statements/Dispute_Statement_or_Details.htm" />
+  </book>
+  <book name="Payments Menu" >
+    <item name="View Customer Payments" url="Menu_Payments/View_Customer_Payments.htm" />
+    <item name="View Refunds" url="Menu_Payments/View_Refunds.htm" />
+  </book>
+  <book name="Correspondence Menu" >
+    <item name="View Account Correspondence" url="Menu_Correspondence/View_Account_Correspondence.htm" />
+    <item name="View Statement Correspondence" url="Menu_Correspondence/View_Statement_Correspondence.htm" />
+    <item name="Create Account Correspondence" url="Menu_Correspondence/Create_Account_Correspondence.htm" />
+    <item name="Create Statement Correspondence" url="Menu_Correspondence/Create_Statement_Correspondence.htm" />
+  </book>
+</book>
+
+</tocdata>

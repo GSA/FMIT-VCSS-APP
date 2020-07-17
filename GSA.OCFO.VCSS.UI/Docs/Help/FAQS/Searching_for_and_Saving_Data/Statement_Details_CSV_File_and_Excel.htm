@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 8" />
+<title>Statement Details CSV File and Excel</title>
+<link rel="StyleSheet" href="../../default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../VCSS_Customer_Help.htm");
+
+		autoSync(0);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script>
+<h1><img src="../../starmark_small.png" alt="starmark_small.png" style="margin-left: 0px; 
+		 margin-right: 0px; margin-top: 0px; margin-bottom: 0px; border-left-style: Solid; 
+		 border-left-width: 2px; border-right-style: Solid; border-right-width: 2px; 
+		 border-top-style: Solid; border-top-width: 2px; border-bottom-style: Solid; 
+		 border-bottom-width: 2px;" width="46" height="46" border="2" /> 
+ &#160;Using Excel To View the Statement Details CSV File</h1>
+<p style="font-style: italic;">This topic assumes the user is using Excel 
+ 2007 or later.</p>
+<p>&#160;</p>
+<p>The easiest way to use Excel to view the Statement Details CSV file 
+ requires that one first create an Excel Template file using this procedure:</p>
+<p>&#160;</p>
+<ol type="1">
+	<li><p style="margin-left: 0px;">Download a statement details csv file 
+	 and save it somewhere convenient.</p></li>
+	<li><p style="margin-left: 0px;">Start Microsoft Excel.</p></li>
+	<li><p style="margin-left: 0px;">Go to the Data tab.</p></li>
+	<li><p style="margin-left: 0px;">Click the &quot;From Text&quot; button 
+	 in the &quot;Get External Data&quot; group.</p></li>
+	<li><p style="margin-left: 0px;">Select the statement details csv file 
+	 previously downloaded.</p></li>
+	<li><p style="margin-left: 0px;">In the next dialog, use the “delimited” 
+	 setting.</p></li>
+	<li><p style="margin-left: 0px;">In the next dialog, use the “comma 
+	 separator” setting.</p></li>
+	<li><p style="margin-left: 0px;">In the next dialog, set the TEXT columns 
+	 to TEXT, the Date columns to MDY, and leave the others as &quot;General&quot;. 
+	 See the <a href="StatementDetailsFormat.htm">Statement Details CSV 
+	 File Format</a> topic for a list of all the columns and import column 
+	 data types.<span style="margin-left: 0px;">&#160;</span></p></li>
+	<li><p style="margin-left: 0px;">When you click &quot;finish&quot; 
+	 the spreadsheet will appear. &#160;Set the cell format property for 
+	 the &quot;General&quot; columns listed in the <a href="StatementDetailsFormat.htm">Statement 
+	 Details CSV File Format</a> topic to &quot;Number&quot;, with the 
+	 appropriate number of decimal positions. &#160;This does not affect 
+	 the data itself, just the way it is displayed.</p></li>
+	<li><p style="margin-left: 0px;">Save the spreadsheet <span style="font-weight: bold;"><b>as 
+	 an Excel Template</b></span>. &#160;Excel will say that the file contains 
+	 data, and ask if you want it deleted and automatically refreshed whenever 
+	 you open the template. &#160;Say yes.</p></li>
+</ol>
+<p>&#160;</p>
+<p>To view a Statement Details CSV file that you have saved to a local 
+ hard drive, do the following:</p>
+<p>&#160;</p>
+<ol type="1">
+	<li>Select file/new, in Excel, and then the template file created as 
+	 described above. If a security warning appears (depends on your local 
+	 setup for Excel), select Options / Enable the content.</li>
+	<li>In the File Import dialog that then appears, select the CSV file 
+	 to be viewed.</li>
+</ol>
+<p>&#160;</p>
+<p>The result will be an Excel sheet with the CSV file's data, without 
+ any leading zeroes dropped, without any scientific notation numbers, and 
+ with the correct numbers of decimals in all the numeric columns.</p>
+<p>&#160;</p>
+<p style="font-weight: bold;">Setting up the Template:</p>
+<p>&#160;</p>
+<p style="margin-left: 0px;">&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

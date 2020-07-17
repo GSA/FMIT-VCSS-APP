@@ -1,0 +1,47 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Label runat="server" CssClass="errorMessage" SkinID="Error" />
+<asp:CustomValidator runat="server" CssClass="errorMessage" SkinID="Error" />
+<asp:ImageButton runat="server" CssClass="imgbtn" SkinID="Add" ImageUrl="~/Images/add.png" />
+<asp:ImageButton runat="server" CssClass="imgbtn" SkinID="Remove" ImageUrl="~/Images/remove.png"/>
+<asp:Image runat="server" SkinID="HelpIcon" CssClass="imgbtn" ImageUrl="~/Images/help.gif" />
+
+<telerik:RadTextBox runat="server" FocusedStyle-BorderColor="Orange" InvalidStyle-BackColor="#FFD9D9" HoveredStyle-BorderColor="Orange" />
+<telerik:RadMaskedTextBox runat="server" FocusedStyle-BorderColor="Orange" InvalidStyle-BackColor="#FFD9D9" HoveredStyle-BorderColor="Orange" />
+<telerik:RadDatePicker runat="server" FocusedStyle-BorderColor="Orange" InvalidStyle-BackColor="#FFD9D9" HoveredStyle-BorderColor="Orange" />
+<telerik:RadDockZone runat="server" SkinID="Main" Orientation="vertical" Style="border: 0px;" />
+<telerik:RadDockZone runat="server" SkinID="Cart" Orientation="vertical" Style="border: 0px; width: 100%;" />
+<telerik:RadDock runat="server" EnableAnimation="true" DockHandle="TitleBar" DockMode="Docked" DefaultCommands="ExpandCollapse" />
+<telerik:RadCaptcha runat="server" ErrorMessage="The code you entered is not valid." ProtectionMode="Captcha" 
+                    Display="Dynamic" SetFocusOnError="True" EnableRefreshImage="true" Font-Size="Small" Font-Names="Arial" IgnoreCase="False"
+                    BackColor="#E9E9E9" Width="350" style="padding-top: 5px;padding-right: 5px;padding-left: 5px;" CaptchaImage-Height="100" CaptchaImage-LineNoise="None"
+                    CaptchaImage-Width="350" CaptchaImage-BackgroundNoise="None" CaptchaImage-TextChars="LettersAndNumbers" CaptchaImage-TextColor="GrayText"/>
+
+<telerik:RadToolTipManager SkinID="AutoToolTip" runat="server" RelativeTo="Element" Position="TopCenter" Skin="Vista" AutoTooltipify="true" ContentScrolling="Default" 
+                           ShowCallout="true" ShowEvent="OnFocus" AutoCloseDelay="3500" />
+<telerik:RadToolTip runat="server" Width="450px" Height="130px" RelativeTo="Element" Position="MiddleRight" Skin="Vista" AutoTooltipify="true" ContentScrolling="Auto" 
+                           ShowCallout="true" ShowEvent="OnMouseOver" HideEvent="ManualClose" SkinID="HelpIcon" />
+
+<telerik:RadGrid runat="server" GridLines="None" CellSpacing="0" Width="100%" >
+    <ExportSettings FileName="Results" ExportOnlyData="true" IgnorePaging="true" />
+    <HeaderStyle Font-Bold="true" Font-Size="12px" HorizontalAlign="Center" />
+    <FooterStyle HorizontalAlign="Center" />    
+    <MasterTableView CommandItemDisplay="Top" OverrideDataSourceControlSorting="true">
+        <CommandItemSettings ShowAddNewRecordButton="false" ShowExportToCsvButton="true"
+            ShowExportToExcelButton="true" ShowExportToPdfButton="false" ShowExportToWordButton="true" />
+            </MasterTableView>
+</telerik:RadGrid>

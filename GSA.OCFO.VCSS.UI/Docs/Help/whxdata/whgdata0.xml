@@ -1,0 +1,37 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<glossarydata>
+ <entry name="Account" value="An Account is assigned by the GSA to a customer entity, e.g. an Agency or an element of an Agency or other organization.  The Account is assigned an Account Code, which is an alpha numeric code assigned by the GSA to identify the Account's data." />
+ <entry name="Account Correspondence" value="A communication concerning the entire customer account." />
+ <entry name="Account Manager" value="A customer organization's representative, who manages the settings for the customer account and serves as a liason between GSA and the customer organization regarding the account." />
+ <entry name="Address Code" value="Generally equal to the account code for customers as opposed to vendors.  (Many vendors will have a single vendor code and several vendor address codes)." />
+ <entry name="Agency Location Code (ALC)" value="Agency Location Code, (ALC) is a numerical code issued by the Department of the Treasury to a governmental entity that is used for various purposes in various systems. In VCSS the ALC is used only for IPAC transactions, and serves as the &quot;designated agent&quot; for one or more Accounts. It identifies, in VCSS, the office that will process the transactions for that Account Code." />
+ <entry name="Attachment" value="A file, such as a word document, spreadsheet, or image file, attached to a correspondence as supporting documentation." />
+ <entry name="Business Line" value="GSA Business Lines such as Fleet, Rent and Telecommunications." />
+ <entry name="Business Partner Network (BPN) Number" value="The Business Partner Network (BPN) number is a 9 position (13 if a supplemental &quot;+4&quot; number is added by the customer entity &quot;owning&quot; the BPN) used to uniquely identify an entry in the Business Partner Network system.  The BPN does not issue separate BPN numbers per se.  Rather the BPN number is one of a customer entity's DUNS (or DUNS plus DUNS +4) numbers if the customer entity is a civilian agency or the literal &quot;DOD&quot; followed by the DoDAAC number if the customer entity is a DOD activity." />
+ <entry name="Cage Code" value="Commercial and Goverment Entity Code, applicable mainly to DoD vendors or organizations doing business with DoD.  Stored in the Central Contractor Registry." />
+ <entry name="CCR" value="The Central Contractor Reistry, a part of BPN that provides addressing and other data pertaining to entities doing business with government agencies, whether commercial or governmental." />
+ <entry name="Correspondence" value="A communication, via the VCSS system, between a customer and GSA" />
+ <entry name="Credit" value="A reduction in the amount billed, generally due to a reduction imposed on a previous month's bill where rather than reimbursing the customer GSA reduces the amount of the current month's bill." />
+ <entry name="CSV" value="Comma Separated Values file." />
+ <entry name="Customers" value="An organization that purchases goods or services from GSA." />
+ <entry name="Dispute Request" value="A correspondence in which the customer disputes the validity of a statement or a statement line item.  For instance, if being billed for renting a vehicle that the customer does not believe his organization is using someone might dispute the line items pertaining to that vehicle." />
+ <entry name="Dispute Resolution" value="A correspondence between GSA and the customer following the investigation of a disputed statement or line item and discussions with the customer regarding that statement or line item." />
+ <entry name="DoDAAC" value="Department of Defense Activity Address Code.  Used in the BPN system, prefixed by the literal &quot;DOD&quot; as a DoD customer entity's BPN number." />
+ <entry name="DUNS Number" value="The Dun &amp; Bradstreet Data Universal Numbering System number assigned by Dun &amp; Bradstreet to a civililan agency (and to non-governmental entities) and the four position (if any) extension to that number created by that organization in the Central Contractor Registry (CCR) and FedReg at the BPN.gov web site." />
+ <entry name="External Applications" value="Applications external to VCSS, such as pay.gov, IPAC, Rent on the Web, and WebBill" />
+ <entry name="GSA" value="General Services Administration" />
+ <entry name="IPAC" value="Intra-Governmental Payment and Collection System" />
+ <entry name="Item Collection" value="An Item Collection in VCSS is a list of selected columns from a group of transactions meeting user specified search criteria.  One may then select an item on the list and open that individual line item in a new window to see the details of that line item should additional columns of information be required." />
+ <entry name="OCFO" value="Office of the Chief Financial Officer" />
+ <entry name="Pay.Gov" value="A U.S. Treasury site for making payments to government organizations using one's bank account or credit card." />
+ <entry name="Payments" value="Amounts paid to GSA by non-IPAC customers or collected from IPAC customers by GSA." />
+ <entry name="PDF" value="Portable Document Format file." />
+ <entry name="ROW" value="Rent on the Web, a customer information site maintained by the Public Building Service (PBS) of GSA." />
+ <entry name="Statement" value="A statement of charges for goods or services purchased from GSA." />
+ <entry name="Statement Correspondence" value="A communication concerning a statement or a line item from a statement." />
+ <entry name="User ID" value="A User ID is the name that an individual uses to log on to VCSS.  To obtain a User ID an individual must identify the Account Code or Codes to which the individual require's access, and the request for access must be approved by the Account Administrator (who is appointed by the Customer Entity that &quot;owns&quot; that Account Code)." />
+ <entry name="VCSS" value="Vendor and Customer Self Service system" />
+ <entry name="Vendor Registration Number" value="A number generated by VCSS when an account code is enabled for accessing through VCSS" />
+ <entry name="WebBill" value="A web site maintained by GSA's Federal Acquisition Service to allow GSA associates and FAS customers to research and analyze FAS billing information related to the leasing of vehicles and purchasing of supplies." />
+
+</glossarydata>

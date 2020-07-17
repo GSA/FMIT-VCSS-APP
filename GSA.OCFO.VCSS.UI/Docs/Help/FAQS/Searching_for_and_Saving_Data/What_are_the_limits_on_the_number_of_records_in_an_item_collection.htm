@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 8" />
+<title>How many search results can someone see at a time</title>
+<link rel="StyleSheet" href="../../default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js"></script>
+
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	if (window.addTocInfo)
+	{
+	addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	
+	
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("../../VCSS_Customer_Help.htm");
+
+		autoSync(0);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+
+//-->
+//]]></script>
+<h1><img src="../../starmark_small.png" style="margin-left: 0px; margin-right: 0px; 
+		 margin-top: 0px; margin-bottom: 0px; border-left-style: Solid; 
+		 border-left-width: 2px; border-right-style: Solid; border-right-width: 2px; 
+		 border-top-style: Solid; border-top-width: 2px; border-bottom-style: Solid; 
+		 border-bottom-width: 2px;" alt="starmark_small.png" width="46" height="46" border="2" /> 
+ &#160;How many search results does the item collection field hold?</h1>
+<p>The item collection field in a VCSS web browser page is a list of the 
+ results returned from a search of the database. &#160;Due to .html and 
+ other limitations the system has been set to only return 999 rows of data 
+ when a search is performed. &#160;If more records meet the search criteria 
+ used, the first 999 will be displayed on the web page and a warning message 
+ will appear. &#160;</p>
+<p style="margin-left: 40px;">&#160;</p>
+<p style="margin-left: 40px;"><img src="../../too_many_rows.png" alt="too_many_rows.png" style="border: none;" width="875" height="18" border="0" /></p>
+<p>&#160;</p>
+<p>For all VCSS item collections other than that on the Statement Details 
+ page, the &quot;View as CSV&quot; button will generate a CSV file based 
+ on the item collection content. &#160;So the CSV file for item collections 
+ where more than 999 rows met the search criteria entered will consist 
+ of the 999 rows in the item collection.</p>
+<p>&#160;</p>
+<p>For the Statement Details page, the &quot;View as CSV&quot; button will 
+ cause VCSS to perform a new query, and the search results will contain 
+ all of the results returned. &#160;However, note that there is a time 
+ limitation on queries performed in VCSS to avoid &quot;runaway queries&quot;, 
+ so there is still a limitation, that being the number of rows that can 
+ be retrieved from the database in 15 minutes. &#160;If the time to complete 
+ the query exceeds this, the results will still be only a portion of the 
+ search results.</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
