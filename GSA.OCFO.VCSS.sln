@@ -1,74 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GSA.OCFO.VCSS.UI", "GSA.OCFO.VCSS.UI", "{ECDE6410-6DFF-44A3-863F-AC957D519B5E}"
-	ProjectSection(WebsiteProperties) = preProject
-		SccProjectName = "Svn"
-		SccAuxPath = "Svn"
-		SccLocalPath = "Svn"
-		SccProvider = "SubversionScc"
-		Frontpage = "false"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/GSA.OCFO.VCSS.UI"
-		Debug.AspNetCompiler.PhysicalPath = "GSA.OCFO.VCSS.UI\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\GSA.OCFO.VCSS.UI\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/GSA.OCFO.VCSS.UI"
-		Release.AspNetCompiler.PhysicalPath = "GSA.OCFO.VCSS.UI\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\GSA.OCFO.VCSS.UI\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "3840"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(SvnOrigin) = preProject
-		@Keys = Enlist,Svn.Uri
-		Enlist = Required
-		Svn.Uri = GSA.OCFO.VCSS.UI/
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBScripts", "DBScripts", "{3388685A-ACF4-4B44-8013-AFC2D2EE76BA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tables", "Tables", "{AE98B985-BFBF-4E04-A613-CB8D31151E4C}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Documents and Settings\RanveerPeddi\Desktop\SQL\ACCOUNTS.sql = C:\Documents and Settings\RanveerPeddi\Desktop\SQL\ACCOUNTS.sql
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stored Procedures", "Stored Procedures", "{5EB53A72-78EB-467C-B42D-F805BE82778F}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Documents and Settings\RanveerPeddi\Desktop\SQL\USP_GETACCOUNTSBYALC.sql = C:\Documents and Settings\RanveerPeddi\Desktop\SQL\USP_GETACCOUNTSBYALC.sql
-		C:\Documents and Settings\RanveerPeddi\Desktop\SQL\USP_GETACCOUNTSBYSEARCH.sql = C:\Documents and Settings\RanveerPeddi\Desktop\SQL\USP_GETACCOUNTSBYSEARCH.sql
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global Temp Tables", "Global Temp Tables", "{18A3B6C9-46D1-43F5-AA96-0FB38462CFE6}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Documents and Settings\RanveerPeddi\Desktop\SQL\V_ACCOUNTS.sql = C:\Documents and Settings\RanveerPeddi\Desktop\SQL\V_ACCOUNTS.sql
-		C:\Documents and Settings\RanveerPeddi\Desktop\SQL\V_USER.sql = C:\Documents and Settings\RanveerPeddi\Desktop\SQL\V_USER.sql
-	EndProjectSection
-EndProject
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|x86 = Debug|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ECDE6410-6DFF-44A3-863F-AC957D519B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECDE6410-6DFF-44A3-863F-AC957D519B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECDE6410-6DFF-44A3-863F-AC957D519B5E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{ECDE6410-6DFF-44A3-863F-AC957D519B5E}.Debug|x86.Build.0 = Debug|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{AE98B985-BFBF-4E04-A613-CB8D31151E4C} = {3388685A-ACF4-4B44-8013-AFC2D2EE76BA}
-		{5EB53A72-78EB-467C-B42D-F805BE82778F} = {3388685A-ACF4-4B44-8013-AFC2D2EE76BA}
-		{18A3B6C9-46D1-43F5-AA96-0FB38462CFE6} = {3388685A-ACF4-4B44-8013-AFC2D2EE76BA}
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {430AC2BF-4119-4C95-8283-388226C0A15E}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
