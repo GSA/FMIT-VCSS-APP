@@ -58,13 +58,13 @@ public partial class SupportRequest : System.Web.UI.Page
                         DataTable dtReader = new DataTable("Records");
 
                         //ds = DataAccess.GetAccountSearch(duns, string.Empty, string.Empty, string.Empty, string.Empty, "V");
-                        oraReader = DataAccess.GetAccountSearch(duns, string.Empty, string.Empty, string.Empty, string.Empty, "V");
+                        dtReader = DataAccess.GetAccountSearch(duns, string.Empty, string.Empty, string.Empty, string.Empty, "V");
 
-                        //Load DataReader into the DataTable.
-                        dtReader.Load(oraReader);
+                        ////Load DataReader into the DataTable.
+                        //dtReader.Load(oraReader);
 
-                        //now, convert to DataSet
-                        ds.Tables.Add(dtReader);
+                        ////now, convert to DataSet
+                        //ds.Tables.Add(dtReader);
                         
                     }
                     else
@@ -73,13 +73,13 @@ public partial class SupportRequest : System.Web.UI.Page
                         DataTable dtReader = new DataTable("Records");
 
                         //ds = DataAccess.GetAccountSearch(string.Empty, string.Empty, alc, accountcode, string.Empty, "C");
-                        oraReader = DataAccess.GetAccountSearch(string.Empty, string.Empty, alc, accountcode, string.Empty, "C");
+                        dtReader = DataAccess.GetAccountSearch(string.Empty, string.Empty, alc, accountcode, string.Empty, "C");
 
-                        //Load DataReader into the DataTable.
-                        dtReader.Load(oraReader);
+                        //    //Load DataReader into the DataTable.
+                        //    dtReader.Load(oraReader);
 
-                        //now, convert to DataSet
-                        ds.Tables.Add(dtReader);
+                        //    //now, convert to DataSet
+                        //    ds.Tables.Add(dtReader);
                     }
 
                     if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)

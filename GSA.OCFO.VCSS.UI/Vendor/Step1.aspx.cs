@@ -91,16 +91,17 @@ public partial class Vendor_Step1 : System.Web.UI.Page
         DataSet ds = new DataSet();
 
         OracleDataReader oraReader;
+        DataTable dtReader = new DataTable("Records");
 
         //ds = DataAccess.GetAccountSearch(act.Num, string.Empty, string.Empty, string.Empty, act.Name, vendor);
 
-        oraReader = DataAccess.GetAccountSearch(act.Num, string.Empty, string.Empty, string.Empty, act.Name, vendor);
+        dtReader = DataAccess.GetAccountSearch(act.Num, string.Empty, string.Empty, string.Empty, act.Name, vendor);
 
-        //Create a new DataTable.
-        DataTable dtReader = new DataTable("Records");
+        ////Create a new DataTable.
+        //DataTable dtReader = new DataTable("Records");
 
-        //Load DataReader into the DataTable.
-        dtReader.Load(oraReader);
+        ////Load DataReader into the DataTable.
+        //dtReader.Load(oraReader);
 
         //now, convert to DataSet
         ds.Tables.Add(dtReader);

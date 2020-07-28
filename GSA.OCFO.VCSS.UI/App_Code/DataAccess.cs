@@ -17,11 +17,12 @@ using System.Data;
 /// </summary>
 public static class DataAccess
 {
-    public static OracleDataReader GetAccountSearch(string duns, string duns4, string alc, string actcode, string company, string accounttype)
+    public static DataTable GetAccountSearch(string duns, string duns4, string alc, string actcode, string company, string accounttype)
     {
         OracleDataReader reader;
         OracleCommand cmd = new OracleCommand();
         OracleConnection cn = new OracleConnection(ConfigurationManager.ConnectionStrings["VCSS"].ConnectionString);
+        DataTable dt;
         //DataSet dataset;
         //Database database;
         //DbCommand command;
@@ -49,9 +50,15 @@ public static class DataAccess
             cmd.Parameters.Add("P_ACTTYP", OracleDbType.Char).Value = accounttype;
             cmd.Parameters.Add("O_CURSOR", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
 
-            reader = cmd.ExecuteReader();
+            using (OracleDataAdapter odaAccount = new OracleDataAdapter(cmd))
+            {
+                dt = new DataTable();
+                odaAccount.Fill(dt);
+            }
 
-            reader.Read();
+            //reader = cmd.ExecuteReader();
+
+            //reader.Read();
 
         }
         catch (Exception ex)
@@ -63,18 +70,19 @@ public static class DataAccess
         finally
         {
             //database = null;
-            //cn.Close();
-            
+            cn.Close();
+
         }
 
-        return reader;
+        return dt;
     }
 
-    public static OracleDataReader GetALCAccounts(string alc)
+    public static DataTable GetALCAccounts(string alc)
     {
         OracleDataReader reader;
         OracleCommand cmd = new OracleCommand();
         OracleConnection cn = new OracleConnection(ConfigurationManager.ConnectionStrings["VCSS"].ConnectionString);
+        DataTable dt;
         //DataSet dataset;
         //Database database;
         //DbCommand command;
@@ -95,9 +103,15 @@ public static class DataAccess
             cmd.Parameters.Add("P_ALC", OracleDbType.Varchar2).Value = alc;
             cmd.Parameters.Add("O_CURSOR", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
 
-            reader = cmd.ExecuteReader();
+            using (OracleDataAdapter odaAccount = new OracleDataAdapter(cmd))
+            {
+                dt = new DataTable();
+                odaAccount.Fill(dt);
+            }
 
-            reader.Read();
+            //reader = cmd.ExecuteReader();
+
+            //reader.Read();
 
 
             //database = DatabaseFactory.CreateDatabase();
@@ -115,18 +129,20 @@ public static class DataAccess
         finally
         {
             //database = null;
+            cn.Close();
         }
 
-        return reader;
+        return dt;
     }
 
-    public static OracleDataReader GetRequestDetails(string fromdate, string todate, string requestid, string requesttype, string firstname,
+    public static DataTable GetRequestDetails(string fromdate, string todate, string requestid, string requesttype, string firstname,
                                             string lastname, string company, string email, string duns, string duns4, string alc, string accountcode,
                                             string addresscode, string addr1, string addr2, string city, string state, string zipcode, string regid)
     {
         OracleDataReader reader;
         OracleCommand cmd = new OracleCommand();
         OracleConnection cn = new OracleConnection(ConfigurationManager.ConnectionStrings["VCSS"].ConnectionString);
+        DataTable dt;
         //DataSet dataset;
         //Database database;
         //DbCommand command;
@@ -170,9 +186,15 @@ public static class DataAccess
 
             cmd.Parameters.Add("O_CURSOR", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
 
-            reader = cmd.ExecuteReader();
+            using (OracleDataAdapter odaAccount = new OracleDataAdapter(cmd))
+            {
+                dt = new DataTable();
+                odaAccount.Fill(dt);
+            }
 
-            reader.Read();
+            //reader = cmd.ExecuteReader();
+
+            //reader.Read();
 
 
 
@@ -186,9 +208,10 @@ public static class DataAccess
         finally
         {
             //database = null;
+            cn.Close();
         }
 
-        return reader;
+        return dt;
     }
 
 
@@ -198,18 +221,19 @@ public static class DataAccess
         DataSet dataset = new DataSet();
         DataSet result = new DataSet();
         OracleDataReader oraReader;
+        DataTable dtReader = new DataTable("Records");
 
         try
         {
             //dataset = GetRequestDetails(fromdate, todate, requestid, requesttype, firstname, lastname, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
 
-            oraReader = GetRequestDetails(fromdate, todate, requestid, requesttype, firstname, lastname, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
+            dtReader = GetRequestDetails(fromdate, todate, requestid, requesttype, firstname, lastname, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
 
-            //Create a new DataTable.
-            DataTable dtReader = new DataTable("Records");
+            ////Create a new DataTable.
+            //DataTable dtReader = new DataTable("Records");
 
-            //Load Oracle DataReader into the DataTable.
-            dtReader.Load(oraReader);
+            ////Load Oracle DataReader into the DataTable.
+            //dtReader.Load(oraReader);
 
             //now, convert to DataSet
             dataset.Tables.Add(dtReader);

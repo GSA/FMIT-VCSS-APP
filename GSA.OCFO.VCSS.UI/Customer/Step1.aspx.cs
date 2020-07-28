@@ -112,14 +112,15 @@ public partial class Customer_Step1 : System.Web.UI.Page
 
         DataSet ds = new DataSet();
         OracleDataReader oraReader;
-
-        oraReader = DataAccess.GetAccountSearch(string.Empty, string.Empty, act.ALC, act.AccountCode, act.Name, customer);
-
-        //Create a new DataTable.
         DataTable dtReader = new DataTable("Records");
 
-        //Load DataReader into the DataTable.
-        dtReader.Load(oraReader);
+        dtReader = DataAccess.GetAccountSearch(string.Empty, string.Empty, act.ALC, act.AccountCode, act.Name, customer);
+
+        ////Create a new DataTable.
+        //DataTable dtReader = new DataTable("Records");
+
+        ////Load DataReader into the DataTable.
+        //dtReader.Load(oraReader);
 
         //now, convert to DataSet
         ds.Tables.Add(dtReader);
