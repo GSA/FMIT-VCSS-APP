@@ -45,7 +45,7 @@ public partial class SupportRequest : System.Web.UI.Page
 
             try
             {
-                OracleDataReader oraReader;
+                //OracleDataReader oraReader;
                 if (topic == "1")
                 {
                     requesttype = rbtnChangeAccountAdminType.SelectedValue.ToUpper().Equals("N") ? "New Account Administrator" : "Account Administrator left";
@@ -64,7 +64,7 @@ public partial class SupportRequest : System.Web.UI.Page
                         //dtReader.Load(oraReader);
 
                         ////now, convert to DataSet
-                        //ds.Tables.Add(dtReader);
+                        ds.Tables.Add(dtReader);
                         
                     }
                     else
@@ -78,8 +78,8 @@ public partial class SupportRequest : System.Web.UI.Page
                         //    //Load DataReader into the DataTable.
                         //    dtReader.Load(oraReader);
 
-                        //    //now, convert to DataSet
-                        //    ds.Tables.Add(dtReader);
+                        //now, convert to DataSet
+                        ds.Tables.Add(dtReader);
                     }
 
                     if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)

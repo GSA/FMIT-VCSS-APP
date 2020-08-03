@@ -115,7 +115,7 @@ public partial class Vendor_Step1 : System.Web.UI.Page
         }
         else
         {
-            if (ds.Tables[0].AsEnumerable().Select(x => x.Field<string>("ACTNUM").Equals(act.Num) && x.Field<string>("NAME").Equals(act.Name)).Count() > 0)
+            if (ds.Tables[0].AsEnumerable().Select(x => x.Field<string>("ACTNUM").Equals(act.Num) && x.Field<string>("NAME").Equals(act.Name)).Count() > 1)
             {
                 lblMessage.Visible = true;
             }

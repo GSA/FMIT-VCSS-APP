@@ -127,7 +127,7 @@ public partial class Customer_Step1 : System.Web.UI.Page
 
         //ds = DataAccess.GetAccountSearch(string.Empty, string.Empty, act.ALC, act.AccountCode, act.Name, customer);
 
-        if ((ds != null && ds.Tables[0].Rows.Count > 0))
+        if ((ds != null && ds.Tables[0].Rows.Count > 1))
         {
             if (ds.Tables[0].AsEnumerable().Select(x => x.Field<string>("ALC").Equals(act.ALC) && x.Field<string>("ACT").Equals(act.AccountCode) && x.Field<string>("NAME").Equals(act.Name)).Count() > 0)
             {
